@@ -6,7 +6,7 @@ exports.numbersAnswers = {
   },
 
   base10: function(str) {
-
+    return parseInt(str, 2);
   },
 
   convertToBinary: function(num) {
@@ -14,6 +14,7 @@ exports.numbersAnswers = {
   },
 
   multiply: function(a, b) {
-
+    var largeNum = 1000000000;
+    return ((a * largeNum) * (b * largeNum)) / (largeNum * largeNum);
   }
 };
